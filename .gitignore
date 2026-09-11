@@ -10,3 +10,6 @@ Experiment/MasterData/
 
 JMAG/source/
 JMAG/results/
+
+# mac user
+.DS_Store
