@@ -21,14 +21,28 @@
 
 本リポジトリでは、大容量データや解析結果出力先（`source/`, `results/`, `MasterData/` など）は Git の追跡対象外 (`.gitignore`) となっています。
 
-新規にリポジトリをクローンした後は、ルートディレクトリにある **`create_folders.bat`** を実行して必要なフォルダ構造を一括作成してください。
+新規にリポジトリをクローンした後は、環境に合わせて以下のスクリプトを実行し、必要なフォルダ構造を一括作成してください。
 
-### 実行方法 (Windows環境)
+### 実行方法
 
+#### Windows環境
 `create_folders.bat` をダブルクリックして実行するか、コマンドプロンプト等から実行します。
 
 ```cmd
 create_folders.bat
+```
+
+#### macOS / Linux環境
+ターミナルから `create_folders.sh` を実行します。
+
+```bash
+./create_folders.sh
+```
+
+またはターミナルで直に以下のコマンドを実行することもできます：
+
+```bash
+mkdir -p COMSOL/{source,results} ComWAVE/{source,results} Experiment/{source/MasterData,results} JMAG/{source,results}
 ```
 
 ### 生成されるディレクトリ構造
