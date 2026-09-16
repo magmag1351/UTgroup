@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 ディレクトリ構成と概要
+## ディレクトリ構成と概要
 
 本プロジェクトは各種数値解析ツールおよび実験系ごとにディレクトリが分かれています。
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 🚀 セットアップ手順（フォルダ構造の作成）
+## セットアップ手順（フォルダ構造の作成）
 
 本リポジトリでは、大容量データや解析結果出力先（`source/`, `results/`, `MasterData/` など）は Git の追跡対象外 (`.gitignore`) となっています。
 
@@ -26,6 +26,7 @@
 ### 実行方法
 
 #### Windows環境
+
 `create_folders.bat` をダブルクリックして実行するか、コマンドプロンプト等から実行します。
 
 ```cmd
@@ -33,6 +34,7 @@ create_folders.bat
 ```
 
 #### macOS / Linux環境
+
 ターミナルから `create_folders.sh` を実行します。
 
 ```bash
@@ -66,7 +68,7 @@ UTgroup/
 
 ---
 
-## 📂 データ運用ルール (`.gitignore`)
+## データ運用ルール (`.gitignore`)
 
 1. **入力データ (`source/`, `MasterData/`)**
    - シミュレーション結果データや実験の生データファイル（CSV, TXT, Excel等）は、各ディレクトリの `source/` または `MasterData/` に配置して解析を行ってください。
@@ -77,6 +79,22 @@ UTgroup/
 
 ---
 
-## 📜 ライセンス
+## ライセンス
 
 本プロジェクトは [MIT License](LICENSE) の下で公開されています。
+
+## python環境構築
+
+```bash
+# 専用の仮想環境を一個用意する
+python -m venv myenv
+
+# 環境を有効化する
+source myenv/bin/activate
+
+# パッケージをインストールする
+pip install -r requirements.txt
+
+# 仮想環境を無効化する
+deactivate
+```
