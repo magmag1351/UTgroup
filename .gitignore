@@ -7,11 +7,14 @@ ComWAVE/results/
 Experiment/source/
 Experiment/results/
 Experiment/MasterData/
+Experiment/__pycache__/
+Experiment/*.pyc
 
 JMAG/source/
 JMAG/results/
 
 results/
+myenv/
 
 # mac user
 .DS_Store
